@@ -7,7 +7,7 @@
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
-![Build Status](https://travis-ci.org/psorensen/tagger.svg?branch=master)
+[![Build Status](https://travis-ci.org/psorensen/tagger.svg?branch=master)](https://travis-ci.org/psorensen/tagger)
 
 This plugin provides a WP-CLI command to scan posts in a Wordpress installation and suggest terms based on a user-provided CSV file.
 
