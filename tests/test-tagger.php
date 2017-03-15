@@ -13,7 +13,14 @@ class Tagger_test extends WP_UnitTestCase {
 	 *
 	 * @var string
 	 */
-	public $csv = TAGGER_PATH . 'tests/test.csv';
+	public $csv;
+
+	/**
+	 * Tagger_test constructor.
+	 */
+	public function __construct() {
+		$this->csv = TAGGER_PATH . 'tests/test.csv';
+	}
 
 	/**
 	 * Test for tagger()->parse_csv() function
