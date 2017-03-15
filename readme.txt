@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin provides a WP-CLI command to scan posts in a Wordpress installation and suggest terms based on a user-provided CSV file.
 
-![Gif of Tagger plugin at work](http://recordit.co/eXLesj12Pv)
+![Gif of Tagger plugin at work](http://g.recordit.co/eXLesj12Pv.gif)
 
 
 == Installation ==
@@ -33,7 +33,7 @@ This plugin provides a WP-CLI command to scan posts in a Wordpress installation 
 
 3. The plugin will scan the site's posts and output a CSV file of post IDs with applicable terms at `/wp-content/uploads/tagger_results/`.
 
-The following arguments are accepted:
+The following optional arguments are accepted:
 
 - `--post_type`: comma-seperated list of post_types to scan. Defaults to post.
 - `--threshold`: minimum number of collective occurences of the provided terms per tag. Defaults to 2.
