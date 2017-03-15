@@ -125,6 +125,10 @@ class Tagger_cli extends WP_CLI_Command {
 
 		$file = fopen( TAGGER_RESULTS_PATH . $filename, 'w' );
 
+		// put the header row.
+		fputcsv( $file, array( 'post_id', 'tags' ) );
+
+		// put the rows.
 		foreach ( $contents as $key => $value ) {
 
 			$value = is_array( $value ) ? implode( ', ', $value ) : $value;
