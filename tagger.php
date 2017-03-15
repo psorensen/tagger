@@ -103,7 +103,7 @@ if ( ! class_exists( 'Tagger_final' ) ) :
 
 			// wp-cli script.
 			if ( defined( 'WP_CLI' ) && WP_CLI ) {
-				require_once( TAGGER_PATH . 'includes/wp-cli.php' );
+				require_once( TAGGER_PATH . 'bin/wp-cli.php' );
 			}
 		}
 	}

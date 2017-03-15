@@ -5,15 +5,41 @@ if ( ! defined( 'ABSPATH' ) ) {
 WP_CLI::add_command( 'tagger', 'tagger_cli' );
 
 /**
- * CLI Commands for logging members
+ * CLI Commands for Tagger
  */
 class Tagger_cli extends WP_CLI_Command {
 
 	/**
-	 * Loop through posts in batches and return applicaple tags
+	 * Exports a report of suggested tags for each post
 	 *
-	 * @param array $args arguments.
-	 * @param array $assoc_args associated arguments.
+	 * ## OPTIONS
+	 *
+	 * <file>
+	 * : The CSV to use when analyzing posts
+	 *
+	 * [--post_type=<post_type,post_type>]
+	 * : Whether or not to greet the person with success or error.
+	 * ---
+	 * default: post
+	 * options:
+	 *   - comma seperated list of posts
+	 * --
+	 *
+	 * [--threshold=<threshold_int>]
+	 * : Minimum number of times any of the terms should occur
+	 * ---
+	 * default: 2
+	 * options:
+	 *   - threshold amount (integer)
+	 * ---
+	 *
+	 * ## EXAMPLES
+	 *
+	 *     wp tagger tag_posts tags.csv --post_type=post,page,product --threshold=7
+	 *
+	 * @var array $args positional arguments.
+	 * @var array $assoc_args associated arguments.
+	 *
 	 */
 	public function tag_posts( $args, $assoc_args ) {
 
