@@ -123,8 +123,6 @@ class Tagger_cli extends WP_CLI_Command {
 			return 'Nothing to write';
 		}
 
-		wp_mkdir_p( get_home_path() . 'test' );
-
 		$file = fopen( TAGGER_RESULTS_PATH . $filename, 'w' );
 
 		foreach ( $contents as $key => $value ) {
