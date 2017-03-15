@@ -1,0 +1,12 @@
+{
+    "name": "psorensen/tagger",
+    "description": "Wordpress plugin used to analyze posts for term occurences based on user-submitted CSV.",
+    "authors": [
+        {
+            "name": "Peter Sorensen",
+            "email": "peter.jens.sorensen@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
