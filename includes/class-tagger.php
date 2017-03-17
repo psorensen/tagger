@@ -20,7 +20,8 @@ class Tagger {
 	 *
 	 * @param string $csv csv file of tags and terms.
 	 *
-	 * @since 0.1.0@link http://php.net/manual/en/function.str-getcsv.php
+	 * @since 0.1.0
+	 * @link http://php.net/manual/en/function.str-getcsv.php
 	 * @return bool|array $tags false if file not included, array of tags and terms
 	 */
 	public function parse_csv( $csv = '' ) {
